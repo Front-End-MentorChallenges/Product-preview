@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;1,300&family=Baloo+Chettan+2:wght@800&family=Fraunces:opsz,wght@9..144,100;9..144,700&family=Josefin+Sans:wght@400;700&family=Libre+Franklin:wght@300&family=Manrope:wght@800&family=Montserrat:ital,wght@0,100;0,700;1,500&family=Outfit:wght@500&family=Poppins:wght@400;500&family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;1,300&family=Baloo+Chettan+2:wght@800&family=Fraunces:opsz,wght@9..144,100;9..144,700&family=Josefin+Sans:wght@400;700&family=Libre+Franklin:wght@300&family=Manrope:wght@800&family=Montserrat:wght@100;700&family=Outfit:wght@500&family=Poppins:wght@400;500&family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;1,300&family=Baloo+Chettan+2:wght@800&family=Fraunces:opsz,wght@9..144,100;9..144,700&family=Josefin+Sans:wght@400;700&family=Libre+Franklin:wght@300&family=Manrope:wght@800&family=Montserrat:wght@100&family=Outfit:wght@500&family=Poppins:wght@400;500&family=Space+Grotesk&display=swap");
+@import "./_variables.scss";
+@import "./_landscape.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  overflow: hidden;
+}
+
+body {
+  background: $cream;
+  font-family: $font-montserrat;
+}
+
+.container {
+  @include respond-to-breakpoint("phone") {
+    min-width: 350px;
+    height: 40rem;
+    display: grid;
+    margin: auto;
+    margin: 20px;
+    border-radius: $border-radius;
+  }
+  max-width: 42rem;
+  height: 60vh;
+  margin: auto;
+  display: flex;
+  margin-top: 10%;
+  background: #fff;
+  border-radius: $border-radius;
+  .side_banner {
+    @include respond-to-breakpoint("phone") {
+      height: 200px;
+    }
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      -webkit-user-drag: none;
+    }
+  }
+  .card_content {
+    @include respond-to-breakpoint("phone") {
+      width: 340px;
+    }
+    width: 300px;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    margin: auto;
+    & .card_info {
+      padding: 10px;
+      .title {
+        letter-spacing: 5px;
+        padding: 5px;
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+      & h1 {
+        font-size: 30px;
+        width: 200px;
+        padding: 5px;
+        margin-bottom: 20px;
+        font-family: $font-fraunces;
+        @include respond-to-breakpoint("phone") {
+          width: 100%;
+        }
+      }
+      & p {
+        line-height: 25px;
+        font-family: $font-montserrat;
+      }
+    }
+    .price_rate {
+      display: flex;
+      gap: 20px;
+      & h1 {
+        font-size: 30px;
+        margin: 20px;
+        font-weight: bold;
+        color: $dark-cyan;
+        font-family: $font-fraunces;
+      }
+      & p {
+        padding: 10px;
+        margin-top: 20px;
+        font-size: 13px;
+        text-decoration: line-through grey 1px;
+      }
+    }
+  }
+  & .cart_button {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: $dark-cyan;
+    transition: 0.5s;
+
+    &:hover {
+      background: $very-dark-blue;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    & img {
+      gap: 20px;
+    }
+  }
+}
+
+.attribution {
+  font-size: 10px;
+  margin-top: 100px;
+  text-align: center;
+  & a {
+    color: #000;
+    font-family: sans-serif;
+    font-weight: bold;
+    &:hover {
+      color: #fff;
+    }
+  }
+}

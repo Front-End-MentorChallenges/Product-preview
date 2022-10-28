@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;1,300&family=Baloo+Chettan+2:wght@800&family=Fraunces:opsz,wght@9..144,100;9..144,700&family=Josefin+Sans:wght@400;700&family=Libre+Franklin:wght@300&family=Manrope:wght@800&family=Montserrat:ital,wght@0,100;0,700;1,500&family=Outfit:wght@500&family=Poppins:wght@400;500&family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;1,300&family=Baloo+Chettan+2:wght@800&family=Fraunces:opsz,wght@9..144,100;9..144,700&family=Josefin+Sans:wght@400;700&family=Libre+Franklin:wght@300&family=Manrope:wght@800&family=Montserrat:wght@100;700&family=Outfit:wght@500&family=Poppins:wght@400;500&family=Space+Grotesk&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;1,300&family=Baloo+Chettan+2:wght@800&family=Fraunces:opsz,wght@9..144,100;9..144,700&family=Josefin+Sans:wght@400;700&family=Libre+Franklin:wght@300&family=Manrope:wght@800&family=Montserrat:wght@100&family=Outfit:wght@500&family=Poppins:wght@400;500&family=Space+Grotesk&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  overflow: hidden;
+}
+
+body {
+  background: #f2ebe3;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 42rem;
+  height: 60vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10%;
+  background: #fff;
+  border-radius: 10px;
+}
+
+@media (max-width: 760px) {
+  .container {
+    min-width: 350px;
+    height: 40rem;
+    display: -ms-grid;
+    display: grid;
+    margin: auto;
+    margin: 20px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .container .side_banner {
+    height: 200px;
+  }
+}
+
+.container .side_banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-drag: none;
+}
+
+.container .card_content {
+  width: 300px;
+  margin-bottom: 30px;
+  margin-bottom: 30px;
+  margin: auto;
+}
+
+@media (max-width: 760px) {
+  .container .card_content {
+    width: 340px;
+  }
+}
+
+.container .card_content .card_info {
+  padding: 10px;
+}
+
+.container .card_content .card_info .title {
+  letter-spacing: 5px;
+  padding: 5px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.container .card_content .card_info h1 {
+  font-size: 30px;
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-family: "Fraunces", serif;
+}
+
+@media (max-width: 760px) {
+  .container .card_content .card_info h1 {
+    width: 100%;
+  }
+}
+
+.container .card_content .card_info p {
+  line-height: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container .card_content .price_rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.container .card_content .price_rate h1 {
+  font-size: 30px;
+  margin: 20px;
+  font-weight: bold;
+  color: #3c8067;
+  font-family: "Fraunces", serif;
+}
+
+.container .card_content .price_rate p {
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 13px;
+  -webkit-text-decoration: line-through grey 1px;
+          text-decoration: line-through grey 1px;
+}
+
+.container .cart_button {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: #fff;
+  background: #3c8067;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .cart_button:hover {
+  background: #1c232b;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.container .cart_button img {
+  gap: 20px;
+}
+
+.attribution {
+  font-size: 10px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #000;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.attribution a:hover {
+  color: #fff;
+}
+/*# sourceMappingURL=styles.css.map */
